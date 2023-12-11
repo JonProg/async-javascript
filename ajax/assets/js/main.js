@@ -44,3 +44,21 @@ function loadResult(response) {
     const resultado = document.querySelector('.result');
     resultado.innerHTML = response;
 }
+
+// função loadPage feita com fetch
+
+/*
+async function loadPage(el) {
+    const href = el.getAttribute('href');
+
+    try {
+        const response = await fetch(href);
+        if(response !== 200) throw new Error('ERROR 404');
+        const html = await response.text();
+        loadResult(html);
+
+    }catch(e) {
+        console.log(e);
+    }
+}
+*/
