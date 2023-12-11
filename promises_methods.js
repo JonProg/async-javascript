@@ -6,7 +6,7 @@ function rand(min,max){
 
 function waitThere(msg,time){
     return new Promise((resolve,reject) =>{
-        if (typeof msg !== "string") reject(new Error('type error')) // chama o catch()
+        if (typeof msg !== "string") reject(new Error('type error')) //chama o catch()
 
         setTimeout(()=>{
             resolve(msg); // chama o then() retornando a msg
